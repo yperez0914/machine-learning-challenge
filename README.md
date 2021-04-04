@@ -7,7 +7,7 @@ For this project, I created two machine learning models to predict new exoplanet
 <br>
 
 # Preprocessing the data <br>
-When preprocessing the data, columns that were not numeric values were dropped including: 'rowid', 'kepid', 'kepoi_name', 'kepler_name', 'koi_disposition', and 'koi_tce_delivname'. The decision needed to be made whether to drop koi_disposition or koi_pdospition. The first time through, I used koi_disposition as my targer. However, since it had three possible values, the model could not reach convergence resulting in accuracy scores of less than 50% before hyptertuning and less than 60% with hyptertuning. Therefore, in my final notebook, koi_pdisposition is instead used as the target and koi_disposition is dropped. Data is split into training and testing data. I then used the MinMaxScaler to fit the data. <br>
+When preprocessing the data, columns that were not numeric values were dropped including: 'rowid', 'kepid', 'kepoi_name', 'kepler_name', 'koi_disposition', and 'koi_tce_delivname'. The decision needed to be made whether to drop koi_disposition or koi_pdospition. The first time through, I used koi_disposition as my target. However, since it had three possible values, the model could not reach convergence resulting in accuracy scores of less than 50% before hyptertuning and less than 60% with hyptertuning. Therefore, in my final notebook, koi_pdisposition is instead used as the target and koi_disposition is dropped. Data is split into training and testing data. I then used the MinMaxScaler to fit the data. <br>
 <br>
 
 # Tuning the Models <br>
